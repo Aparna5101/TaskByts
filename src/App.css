@@ -1,0 +1,89 @@
+body{
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+}
+.App{
+  z-index: 5;
+  width: 100vw;
+  color: white;
+  height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.App .box{
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .box input{
+  padding: 10px;
+  outline: none;
+  font-size: 20px;
+  width: 500px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.App .box .btn{
+  background-color:rgb(255, 0, 0) ;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.App .Header{
+  padding: 10px;
+  width: 80vw;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.App .btn{
+  border: 1px solid red;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.App .List{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.App .List .Tile{
+  background-color: rgb(255, 0, 0);
+  margin: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.App .List .Tile .sm-btn{
+  margin: 0 10px;
+  float: left;
+  cursor: pointer;
+}
